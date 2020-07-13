@@ -1,0 +1,23 @@
+/***************************************************
+AUTOR: carmen Luyo
+PROYECTO: PORTAFOLIO
+DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
+****************************************************/
+@import 'style.scss';
+@import 'animate.css';
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.fix-img {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
