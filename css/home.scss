@@ -16,8 +16,97 @@ DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
 }
 .fix-img {
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
 }
+
+.center-ctn {
+    display: flex;
+    align-items: center;
+}
+
+section.home{
+    background-color: #b89591;
+    .ctn-info {
+        color:#912614;
+        text-align: center;
+        font-family: 'TitilliumWeb-Regular';
+        h1 {
+            text-transform: uppercase;
+            font-size: 45px;
+        }
+        span {
+            font-size: 25px;
+        }
+    }
+}
+
+section.banner-tree {
+    p {
+        font-family: 'TitilliumWeb-Light';
+        color: #fff;
+        max-width: 730px;
+        margin: 0 auto;
+        font-size: 20px;
+        margin-top: 24%;
+        text-align: justify;
+    }
+}
+
+.banner-about {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    .bg-about{
+        background-color: #dfd2d2;
+        padding: 20px 0;
+        text-align: center;
+        .ctn-text-about{
+            margin: 0 auto;
+            max-width: 750px;
+            font-family: "TitilliumWeb-Light";
+            color: #b89591;
+            font-size: 20px;
+            h2{
+                color:#912614;
+                margin-bottom: 2%;
+                font-family: "TitilliumWeb-Light";
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.container-slide {
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+section.contact {
+    background-color: #b89591;
+    .ctn-info {
+        color:#912614;
+        text-align: center;
+        font-family: 'TitilliumWeb-Light';
+        h2 {
+            text-transform: uppercase;
+            font-size: 45px;
+        }
+        span {
+            font-size: 25px;
+        }
+    }
+    .ctn-email {
+        margin-top: 5%;
+        a {
+            font-family: "TitilliumWeb-Light";
+            color: #9b5248;
+            display: block;
+        }
+    }
+}
+

@@ -25,19 +25,13 @@ body {
 /* Fonts */
 /* Regular */
 @font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/OpenSans-Regular-webfont.eot");
-  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular") format("svg");
+  font-family: "TitilliumWeb-Regular";
+  src: url("../fonts/TitilliumWeb-Regular.ttf");
 }
 /* Light */
 @font-face {
-  font-family: "OpenSansLight";
-  src: url("../fonts/OpenSans-Light-webfont.eot");
-  src: url("../fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light-webfont.woff") format("woff"), url("../fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Light-webfont.svg#OpenSansLight") format("svg");
-}
-@font-face {
-  font-family: "SF-KingstonRegular";
-  src: url("../fonts/SF-Kingston-Regular.otf");
+  font-family: "TitilliumWeb-Light";
+  src: url("../fonts/TitilliumWeb-Light.ttf");
 }
 /** clear **/
 .cleardiv:after, .cleardiv:before {
@@ -119,380 +113,6 @@ img {
   background-size: cover;
 }
 
-.r-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  z-index: 1001;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-  cursor: pointer;
-  transition: all 0.65s ease;
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-
-.active-overlay {
-  visibility: visible;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-
-.fontRar {
-  color: #008891;
-  font-family: "SF-KingstonRegular";
-  font-size: 40px;
-}
-
-/*** HEADER ***/
-header {
-  transition: all 0.35s ease-in-out;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1500;
-}
-header:after, header:before {
-  content: "";
-  display: block;
-  clear: both;
-}
-header a {
-  color: black;
-}
-header .right {
-  float: right;
-}
-header .right nav ul {
-  margin-bottom: 0px;
-}
-header .right nav ul li {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-}
-header .right nav ul li a {
-  display: block;
-  position: relative;
-  color: #fff;
-  font-family: "OpenSans";
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 14px;
-  padding: 8px 15px;
-  transition: all 0.5s ease-out;
-}
-header .right nav ul li a:hover {
-  color: #008891;
-}
-header .mobile-icon {
-  display: inline-block;
-  width: 35px;
-  cursor: pointer;
-  position: fixed;
-}
-header .mobile-icon i {
-  height: 3px;
-  width: 100%;
-  background: white;
-  display: block;
-  margin-bottom: 3px;
-}
-header .mobile-icon i:last-child {
-  margin-bottom: 0px;
-}
-header .menu-responsive {
-  width: 270px;
-  height: 100%;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  right: -270px;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.32);
-  z-index: 1002;
-  transition: right 0.45s ease;
-}
-header .menu-responsive ul {
-  list-style-type: none;
-  padding: 0;
-  padding-top: 35px;
-}
-header .menu-responsive .nav-logo {
-  text-align: center;
-  padding-top: 25%;
-}
-header .menu-responsive .nav-logo img {
-  width: 180px;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  display: block;
-  padding-left: 20px;
-}
-header .menu-responsive .close-nav {
-  position: absolute;
-  right: 50px;
-  float: right;
-  top: 45px;
-  cursor: pointer;
-}
-header .menu-responsive .close-nav i {
-  width: 30px;
-  z-index: 999;
-  height: 3px;
-  position: absolute;
-  background-color: #008891;
-}
-header .menu-responsive .close-nav i:nth-child(1) {
-  transform: rotate(45deg);
-}
-header .menu-responsive .close-nav i:nth-child(2) {
-  transform: rotate(-45deg);
-}
-header .active-menu {
-  right: 0;
-}
-
-/* MOBILE HEADER*/
-.btn-menu {
-  display: none;
-}
-
-@media screen and (max-width: 1024px) {
-  header .right .btn-menu span > i {
-    background-color: #fff;
-  }
-
-  .btn-menu {
-    display: inline-block;
-    top: 30px;
-    right: 50px;
-    position: relative;
-  }
-
-  header .right > nav {
-    display: none;
-  }
-  header .right > .menu-responsive {
-    display: block;
-  }
-  header .right > .menu-responsive ul > li {
-    display: block;
-    text-align: center;
-    border-bottom: 1px solid gray;
-  }
-  header .right > .menu-responsive ul > li a {
-    color: #3f3f3f;
-  }
-}
-@media only screen and (min-width: 768px) {
-  header nav {
-    position: absolute;
-    float: right;
-    margin-right: -9px;
-    top: 39px;
-    display: block;
-    right: 47px;
-  }
-  header nav ul.menu-gral > li {
-    display: inline-block;
-    position: relative;
-    transition: all 0.5s ease-out;
-  }
-}
-/************** WORK ***********************/
-.work .fullimg {
-  position: relative;
-}
-.work .fullimg .caption {
-  top: 50%;
-  transform: translateY(-50%);
-  position: absolute;
-  width: 100%;
-  padding: 50px;
-  color: #fff;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.47);
-}
-@media only screen and (max-width: 767px) {
-  .work .fullimg .caption {
-    font-size: 11px;
-  }
-}
-@media only screen and (min-width: 1366px) {
-  .work .fullimg .caption {
-    padding: 50px 100px;
-    font-weight: 200;
-    line-height: 33px;
-    font-size: 21px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .work {
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-  }
-  .work aside,
-.work .righted {
-    height: 100%;
-    width: 50%;
-  }
-  .work aside {
-    position: fixed;
-  }
-  .work aside .fullimg {
-    height: 100%;
-  }
-  .work aside .fullimg img {
-    height: 100%;
-    width: 100%;
-    display: block;
-  }
-  .work .righted {
-    margin-left: auto;
-  }
-  .work .righted article i.bolder {
-    font-size: 17px;
-  }
-}
-
-.section .slide {
-  min-height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center right;
-}
-
-.section .slide .content {
-  background: white;
-  width: 500px;
-  height: 100vh;
-  display: table-cell;
-  text-align: center;
-  padding: 110px 25px 60px 75px;
-  vertical-align: middle;
-}
-
-.section .slide .content .price {
-  font-family: "BaskervilleOldFace";
-  color: #e11b86;
-  font-size: 82px;
-}
-
-.section .slide .content .featured {
-  font-size: 0;
-}
-
-.section .slide .content .featured .item {
-  border: 1px solid #c5c5c6;
-  display: inline-block;
-  margin: 0 5px;
-  padding: 15px 0;
-  text-align: center;
-}
-
-.section .slide .content .featured .item .icon {
-  color: #e11b86;
-  display: table-cell;
-  font-size: 28px;
-  height: 50px;
-  vertical-align: middle;
-  width: 105px;
-}
-
-.section .slide .content .featured .item .icon.icon-sqft {
-  font-size: 24px;
-}
-
-.section .slide .content .featured .item .name {
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: block;
-}
-
-.section .slide .content .address {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 25px 0;
-}
-
-.section .slide .content .description {
-  font-size: 14px;
-  font-weight: 500;
-  text-align: left;
-  padding: 0 30px;
-}
-
-.section .slide .content .description .viewDetails {
-  display: block;
-  margin-top: 15px;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-
-.section .slide .content .description .viewDetails a {
-  color: #333;
-  font-weight: 700;
-}
-
-.section .slide .content .viewAll {
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-.section .slide .content .viewAll a {
-  color: #333;
-  font-weight: 700;
-  padding: 15px 45px;
-  border: 5px solid #d50a7c;
-  display: inline-block;
-  letter-spacing: 1px;
-}
-
-.section .slide .content .fp-slidesNav {
-  left: auto;
-  position: static;
-  transform: none;
-  z-index: 4;
-  margin: 25px 0;
-}
-
-.section .slide .content .fp-slidesNav ul li {
-  height: auto;
-  margin: 0 3px;
-  width: auto;
-}
-
-.section .slide .content .fp-slidesNav ul li a {
-  padding: 3px;
-  border: 1px solid #aeaeae;
-}
-
-.section .slide .content .fp-slidesNav ul li a span {
-  border-radius: 0;
-  display: block;
-  height: 7px;
-  left: auto;
-  margin: 0;
-  position: static;
-  top: auto;
-  width: 41px;
-  background: none;
-}
-
-.section .slide .content .fp-slidesNav ul li a.active span {
-  background: #d71984;
-}
-
 #myVideo {
   position: fixed;
   right: 0;
@@ -503,8 +123,94 @@ header .active-menu {
 
 .fix-img {
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
+}
+
+.center-ctn {
+  display: flex;
+  align-items: center;
+}
+
+section.home {
+  background-color: #b89591;
+}
+section.home .ctn-info {
+  color: #912614;
+  text-align: center;
+  font-family: "TitilliumWeb-Regular";
+}
+section.home .ctn-info h1 {
+  text-transform: uppercase;
+  font-size: 45px;
+}
+section.home .ctn-info span {
+  font-size: 25px;
+}
+
+section.banner-tree p {
+  font-family: "TitilliumWeb-Light";
+  color: #fff;
+  max-width: 730px;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-top: 24%;
+  text-align: justify;
+}
+
+.banner-about {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.banner-about .bg-about {
+  background-color: #dfd2d2;
+  padding: 20px 0;
+  text-align: center;
+}
+.banner-about .bg-about .ctn-text-about {
+  margin: 0 auto;
+  max-width: 750px;
+  font-family: "TitilliumWeb-Light";
+  color: #b89591;
+  font-size: 20px;
+}
+.banner-about .bg-about .ctn-text-about h2 {
+  color: #912614;
+  margin-bottom: 2%;
+  font-family: "TitilliumWeb-Light";
+}
+.banner-about .bg-about .ctn-text-about p {
+  font-size: 16px;
+}
+
+.container-slide {
+  margin: 0 auto;
+  max-width: 750px;
+}
+
+section.contact {
+  background-color: #b89591;
+}
+section.contact .ctn-info {
+  color: #912614;
+  text-align: center;
+  font-family: "TitilliumWeb-Light";
+}
+section.contact .ctn-info h2 {
+  text-transform: uppercase;
+  font-size: 45px;
+}
+section.contact .ctn-info span {
+  font-size: 25px;
+}
+section.contact .ctn-email {
+  margin-top: 5%;
+}
+section.contact .ctn-email a {
+  font-family: "TitilliumWeb-Light";
+  color: #9b5248;
+  display: block;
 }
