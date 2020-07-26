@@ -110,3 +110,24 @@ section.contact {
     }
 }
 
+
+@media (max-width: 768px) {
+    .fp-section {
+        height: auto !important;
+    }
+    .fp-section .fp-tableCell {
+        height: auto !important;
+    }
+    section.home, section.contact{
+        height:100% !important;
+    }
+    section.banner-tree p, .banner-about .bg-about .ctn-text-about {
+        padding: 35px 25px;
+    }
+    .container-slide {
+        padding: 40px 20px;
+    }
+    .banner-about {
+        position: relative;
+    }
+}
