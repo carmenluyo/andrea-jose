@@ -1,0 +1,141 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title> Andrea Jose </title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,Sass, JavaScript">
+    <meta name="author" content="Carmen Luyo">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+     <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  </head>
+  <body>
+   
+   
+    <div id="fullpage">
+        <section  class="section" data-anchor="page-title">
+            <img src="images/bg-title-collections.jpeg" alt="">
+        </section>
+        <section class="home section" data-anchor="home">
+            <div class="ctn-info">
+                <h2>
+                    J'arapay
+                </h2>
+                <span>
+                    Wrapping
+                </span>
+            </div>
+        </section>
+        <section class="collections section" data-anchor="collections">
+            <img src="images/bg-coollections.jpeg" alt="">
+        </section>
+
+
+        <section class="section slide-gallery" data-anchor="banner-six">
+            <div class="border-rosado-top"></div>
+            <div class="container-slide">
+                <div class="center-ctn">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item ctn-gallery">
+                            <img src="images/img-anillo.jpeg" alt="">
+                            <div class="ctn-info-slide">
+                                <h3> K'ipa Ring</h3>
+                                <p>
+                                    18k  mercury free gold ring
+                                </p>
+
+                                <div class="contact-price">
+                                    <h4>Available</h4>
+                                    <a href="contact.html">Contact For Price</a>
+                                    <div class="icon-map">
+                                        <i class="fa fa-map-marker"></i>
+
+                                        <span>London</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ctn-gallery">
+                            <img src="images/img-anillo.jpeg" alt="">
+                            <div class="ctn-info-slide">
+                                <h3> K'ipa Ring</h3>
+                                <p>
+                                    18k  mercury free gold ring
+                                </p>
+
+                                <div class="contact-price">
+                                    <h4>Available</h4>
+                                    <a href="contact.html">Contact For Price</a>
+                                    <div class="icon-map">
+                                        <i class="fa fa-map-marker"></i>
+
+                                        <span>London</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-rosado-bottom"></div>
+        </section>
+
+        <section class="section contact" data-anchor="contact">
+            <div class="ctn-info">
+                <h2>
+                    Andrea Jose
+                </h2>
+                <span>London - Lima</span>
+
+                <div class="ctn-email">
+                    <a href="#">
+                        andreajose@casacollab.com
+                    </a>
+                    <a href="#">
+                        @andreajosedesing
+                    </a>
+                    <a href="#">
+                        +44 7957117752
+                    </a>
+                </div>
+
+            </div>
+        </section>
+      
+    </div>
+      
+      
+            
+      <script src="js/jquery-3.1.0.min.js"></script>
+      <script src="js/jquery.fullPage.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/main.js"></script>
+
+
+      <script>
+
+        $(document).ready(function() {
+          function initialization() {
+          $('#fullpage').fullpage({
+            resize: false,
+            navigation: false,
+            showActiveTooltip: false,
+            slidesNavigation: false,
+            loopHorizontal: false,
+            responsive: 768
+          });
+        }
+        initialization();
+        });
+      </script>
+  </body>
+</html> 

@@ -1,0 +1,98 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title> Andrea Jose </title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,Sass, JavaScript">
+    <meta name="author" content="Carmen Luyo">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+     <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  </head>
+  <body>
+   
+   
+    <div id="fullpage">
+        <section class="section" data-anchor="banner-about">
+            <img src="images/banner-about.jpeg" alt="">
+        </section>
+
+        <section class="section about" data-anchor="banner-four">
+            <div class="fix-img center-ctn">
+                <div class="ctn-text-about">
+                    <h2>ANDREA JOSE</h2>
+                    <p>
+                        Peruvian designer Andrea Jose strives to transform the resourcing and production of jewellery.
+                    </p>
+                    <p>
+                        Working in social development with mining projects whilst learning jewellery techniques with master artisans Andrea strengthened the connection to her country, honing her sensibilities towards material and craft. The particularly male dominated mining industry inspired and motivated her to value the work of strong female leaders. After three years of working at her own jewellery company, the first B Corp in the jewellery sector in Latin America, and completing her MA Design in Central Saint Martins, Andrea Jose is is shaping a new value chain for ethical jewellery set on real life stories of women and a consciousness for environmental sustainability. 
+                    </p>
+                    <p> 
+                        From these diverse experiences, that forged her professional life, she celebrates the value of a reciprocal approach within the jewellery system.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" data-anchor="banner-image-1">
+            <img src="images/banner-imagen-1.jpeg" alt="">
+        </section>
+
+        <section class="section" data-anchor="banner-image-2">
+            <img src="images/banner-imagen-2.jpeg" alt="">
+        </section>
+
+        <section class="section" data-anchor="banner-image-3">
+            <img src="images/banner-imagen-3.jpeg" alt="">
+        </section>
+
+        <section class="section" data-anchor="banner-image-4">
+            <img src="images/banner-imagen-4.jpeg" alt="">
+        </section>
+
+        <section class="section" data-anchor="banner-image-5">
+            <img src="images/banner-imagen-5.jpeg" alt="">
+        </section>
+
+        <section class="section" data-anchor="banner-five">
+            <img src="images/banner-values.jpeg" alt="">
+        </section>
+      
+    </div>
+      
+      
+            
+      <script src="js/jquery-3.1.0.min.js"></script>
+      <script src="js/jquery.fullPage.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/main.js"></script>
+
+
+      <script>
+
+        $(document).ready(function() {
+          function initialization() {
+          $('#fullpage').fullpage({
+            resize: false,
+            navigation: false,
+            showActiveTooltip: false,
+            slidesNavigation: false,
+            loopHorizontal: false,
+            responsive: 768
+          });
+        }
+        initialization();
+        });
+      </script>
+  </body>
+</html> 

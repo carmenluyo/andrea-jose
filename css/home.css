@@ -113,6 +113,76 @@ img {
   background-size: cover;
 }
 
+/* Colecction */
+.border-rosado-top {
+  background-color: #f5e9e8;
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  top: 0;
+}
+
+.border-rosado-bottom {
+  background-color: #f5e9e8;
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  bottom: 0;
+}
+
+.ctn-gallery {
+  display: flex;
+  justify-content: center;
+}
+.ctn-gallery img {
+  width: 60% !important;
+}
+.ctn-gallery .ctn-info-slide h3 {
+  font-size: 25px;
+  margin-bottom: 15%;
+}
+.ctn-gallery .ctn-info-slide p {
+  color: #c1c1c1;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #c1c1c1;
+  padding-bottom: 25px;
+}
+.ctn-gallery .ctn-info-slide .contact-price a {
+  background-color: #d5ccba;
+  padding: 15px 0px;
+  font-weight: 100;
+  display: block;
+  margin: 20px 0;
+  color: #8c7272;
+}
+.ctn-gallery .ctn-info-slide .contact-price .icon-map span {
+  font-size: 10px;
+}
+
+.container-slide .owl-nav button {
+  margin-top: -60px !important;
+  position: absolute;
+  top: 50%;
+  color: #847f84;
+}
+.container-slide .owl-nav button span {
+  font-size: 52px;
+  color: #847f84;
+}
+.container-slide .owl-nav .owl-prev {
+  left: -30px;
+}
+.container-slide .owl-nav .owl-next {
+  right: -30px;
+}
+.container-slide .owl-dots {
+  display: none;
+}
+.container-slide .owl-theme .owl-nav [class*=owl-]:hover {
+  background-color: #ffff;
+  color: #847f84;
+}
+
 #myVideo {
   position: fixed;
   right: 0;
@@ -145,45 +215,56 @@ section.home .ctn-info {
 section.home .ctn-info h1 {
   text-transform: uppercase;
   font-size: 45px;
+  letter-spacing: 21px;
 }
 section.home .ctn-info span {
   font-size: 25px;
 }
 
-section.banner-tree p {
-  font-family: "TitilliumWeb-Light";
-  color: #fff;
-  max-width: 730px;
+section.banner-tree .ctn-info-tree {
+  max-width: 855px;
   margin: 0 auto;
-  font-size: 20px;
-  margin-top: 24%;
+  margin-top: 25%;
+}
+section.banner-tree .ctn-info-tree p {
+  font-family: "TitilliumWeb-Light";
+  font-size: 33px;
   text-align: justify;
+  color: #912514;
+  font-weight: 700;
+  opacity: 0.49;
+}
+section.banner-tree .ctn-info-tree ul {
+  display: flex;
+  margin-top: 10%;
+}
+section.banner-tree .ctn-info-tree ul li span {
+  color: #912514;
+  font-weight: 700;
+  opacity: 0.49;
 }
 
-.banner-about {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-.banner-about .bg-about {
+section.about {
   background-color: #dfd2d2;
   padding: 20px 0;
   text-align: center;
 }
-.banner-about .bg-about .ctn-text-about {
+section.about .ctn-text-about {
   margin: 0 auto;
   max-width: 750px;
   font-family: "TitilliumWeb-Light";
   color: #b89591;
   font-size: 20px;
 }
-.banner-about .bg-about .ctn-text-about h2 {
+section.about .ctn-text-about h2 {
   color: #912614;
-  margin-bottom: 2%;
   font-family: "TitilliumWeb-Light";
+  margin-bottom: 45px;
+  margin-top: 40px;
 }
-.banner-about .bg-about .ctn-text-about p {
-  font-size: 16px;
+section.about .ctn-text-about p {
+  font-size: 19px;
+  margin-bottom: 35px;
 }
 
 .container-slide {
@@ -213,6 +294,27 @@ section.contact .ctn-email a {
   font-family: "TitilliumWeb-Light";
   color: #9b5248;
   display: block;
+}
+
+.banner-menu {
+  background-color: #e1d2d2;
+}
+.banner-menu .ctn-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-menu .ctn-menu ul li h5 {
+  color: #9b5248;
+  opacity: 0.49;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: "TitilliumWeb-Regular";
+}
+.banner-menu .ctn-menu ul li h5:hover {
+  color: #912614;
 }
 
 @media (max-width: 768px) {

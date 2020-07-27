@@ -36,6 +36,7 @@ section.home{
         h1 {
             text-transform: uppercase;
             font-size: 45px;
+            letter-spacing: 21px;
         }
         span {
             font-size: 25px;
@@ -44,39 +45,50 @@ section.home{
 }
 
 section.banner-tree {
-    p {
-        font-family: 'TitilliumWeb-Light';
-        color: #fff;
-        max-width: 730px;
+    .ctn-info-tree {
+        max-width: 855px;
         margin: 0 auto;
-        font-size: 20px;
-        margin-top: 24%;
-        text-align: justify;
+        margin-top: 25%;
+        p {
+            font-family: "TitilliumWeb-Light";
+            font-size: 33px;
+            text-align: justify;
+            color: #912514;
+            font-weight: 700;
+            opacity: 0.49;
+        }
+        ul {
+            display: flex;
+            margin-top: 10%;
+            li span{
+                color: #912514;
+                font-weight: 700;
+                opacity: 0.49;
+            }
+        }
     }
+    
 }
 
-.banner-about {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    .bg-about{
-        background-color: #dfd2d2;
-        padding: 20px 0;
-        text-align: center;
-        .ctn-text-about{
-            margin: 0 auto;
-            max-width: 750px;
+section.about {
+    background-color: #dfd2d2;
+    padding: 20px 0;
+    text-align: center;
+    .ctn-text-about{
+        margin: 0 auto;
+        max-width: 750px;
+        font-family: "TitilliumWeb-Light";
+        color: #b89591;
+        font-size: 20px;
+        h2{
+            color:#912614;
             font-family: "TitilliumWeb-Light";
-            color: #b89591;
-            font-size: 20px;
-            h2{
-                color:#912614;
-                margin-bottom: 2%;
-                font-family: "TitilliumWeb-Light";
-            }
-            p{
-                font-size: 16px;
-            }
+            margin-bottom: 45px;
+            margin-top: 40px;
+        }
+        p{
+            font-size: 19px;
+            margin-bottom: 35px;
         }
     }
 }
@@ -106,6 +118,30 @@ section.contact {
             font-family: "TitilliumWeb-Light";
             color: #9b5248;
             display: block;
+        }
+    }
+}
+
+.banner-menu {
+    background-color: #e1d2d2;
+    .ctn-menu ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+            h5 {
+                color: #9b5248;
+                opacity: 0.49;
+                font-size: 30px;
+                text-align: center;
+                margin-top: 20px;
+                cursor: pointer;
+                font-family: 'TitilliumWeb-Regular';
+
+                &:hover{
+                    color: #912614;
+                }
+            }
         }
     }
 }
