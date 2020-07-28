@@ -20,6 +20,7 @@ html, body {
 body {
   position: relative;
   background-color: transparent;
+  font-family: "TitilliumWeb-Regular";
 }
 
 /* Fonts */
@@ -138,7 +139,7 @@ img {
   width: 60% !important;
 }
 .ctn-gallery .ctn-info-slide h3 {
-  font-size: 25px;
+  font-size: 18px;
   margin-bottom: 15%;
 }
 .ctn-gallery .ctn-info-slide p {
@@ -148,7 +149,7 @@ img {
   padding-bottom: 25px;
 }
 .ctn-gallery .ctn-info-slide .contact-price a {
-  background-color: #d5ccba;
+  background-color: #e4e4e4;
   padding: 15px 0px;
   font-weight: 100;
   display: block;
@@ -181,6 +182,206 @@ img {
 .container-slide .owl-theme .owl-nav [class*=owl-]:hover {
   background-color: #ffff;
   color: #847f84;
+}
+
+.info-jarapay {
+  background-color: #dfd2d2;
+  padding: 20px 0;
+  text-align: center;
+}
+.info-jarapay .ctn-text-about {
+  margin: 0 auto;
+  max-width: 750px;
+  font-family: "TitilliumWeb-Light";
+  color: #b89591;
+  font-size: 20px;
+}
+.info-jarapay .ctn-text-about h2 {
+  color: #912614;
+  font-family: "TitilliumWeb-Light";
+  margin-bottom: 45px;
+  margin-top: 40px;
+}
+
+.ctn-info-slide {
+  width: 30%;
+  margin-right: 25px;
+}
+
+.menu-toggler {
+  position: fixed;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #d2c7d8;
+  width: 36px;
+  height: 64px;
+  border-radius: 0 10px 10px 0;
+  padding: 8px;
+}
+.menu-toggler > span {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.menu-toggler > span > span {
+  display: block;
+  background-color: #625a69;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+}
+.menu-toggler > span > span:nth-child(2) {
+  margin: 4px 0;
+}
+@media screen and (max-width: 767px) {
+  .menu-toggler {
+    width: 36px;
+    height: 56px;
+  }
+}
+
+/**
+ * Menú modal
+ */
+.menu-overlay {
+  position: fixed;
+  z-index: 10;
+  margin: auto;
+  background-color: #e1d2d2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.close-menu {
+  position: fixed;
+  display: block;
+  font-size: 36px;
+  top: 15px;
+  right: 15px;
+  z-index: 12;
+  line-height: 1;
+  color: #912614;
+}
+@media screen and (min-width: 1024px) {
+  .close-menu {
+    font-size: 42px;
+  }
+}
+
+.menu-overlay, .close-menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.menu-overlay.active, .close-menu.active {
+  visibility: visible;
+  opacity: 100;
+}
+
+.menu-nav {
+  z-index: 11;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s linear;
+  transform: translateX(-100%);
+  background-color: #dabcbc;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.menu-nav nav {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.menu-nav nav a {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.menu-nav nav a figure {
+  width: 85px;
+  min-width: 85px;
+  margin-right: 15px;
+}
+.menu-nav nav a figure img {
+  width: 60px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.menu-nav nav a span {
+  font-size: 18px;
+  flex: 1 1 auto;
+  color: #912614;
+  display: block;
+  font-weight: 500;
+}
+@media screen and (min-width: 1024px) {
+  .menu-nav nav {
+    width: 70%;
+  }
+  .menu-nav nav a figure img {
+    width: 65px;
+  }
+  .menu-nav nav a span {
+    font-size: 21px;
+  }
+}
+.menu-nav footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.menu-nav footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.menu-nav footer ul li {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.menu-nav footer ul li a {
+  color: #912614;
+}
+.menu-nav.active {
+  transform: translateX(0);
+}
+@media screen and (min-width: 1024px) {
+  .menu-nav {
+    width: 380px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .menu-nav {
+    width: 100%;
+    right: 0;
+  }
+}
+
+@media (--until-tablet-portrait) and (--landscape) {
+  .intro-nav {
+    width: 100%;
+    overflow-y: auto;
+  }
 }
 
 #myVideo {
@@ -269,7 +470,7 @@ section.about .ctn-text-about p {
 
 .container-slide {
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 950px;
 }
 
 section.contact {
