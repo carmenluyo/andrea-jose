@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /***************************************************
 AUTOR: carmen Luyo
-PROYECTO: PORTAFOLIO
+PROYECTO: Andrea Jose
 DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
 ****************************************************/
 @import 'animate.css';
@@ -218,7 +218,7 @@ img {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #d2c7d8;
+  background-color: #c5a9a6;
   width: 36px;
   height: 64px;
   border-radius: 0 10px 10px 0;
@@ -231,7 +231,7 @@ img {
 }
 .menu-toggler > span > span {
   display: block;
-  background-color: #625a69;
+  background-color: #912614;
   width: 100%;
   height: 3px;
   border-radius: 10px;
@@ -328,6 +328,7 @@ img {
   color: #912614;
   display: block;
   font-weight: 500;
+  font-family: "TitilliumWeb-Regular";
 }
 @media screen and (min-width: 1024px) {
   .menu-nav nav {
@@ -443,6 +444,7 @@ section.banner-tree .ctn-info-tree ul li span {
   color: #912514;
   font-weight: 700;
   opacity: 0.49;
+  font-family: "TitilliumWeb-Light";
 }
 
 section.about {
@@ -541,5 +543,22 @@ section.contact .ctn-email a {
 
   .banner-about {
     position: relative;
+  }
+
+  .banner-menu {
+    padding: 80px 0px;
+  }
+
+  .banner-menu .ctn-menu ul li h5 {
+    font-size: 20px;
+  }
+
+  section.banner-tree .ctn-info-tree ul {
+    display: block;
+    text-align: center;
+    padding-bottom: 15%;
+  }
+  section.banner-tree .ctn-info-tree ul li span {
+    font-size: 25px;
   }
 }

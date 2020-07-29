@@ -1,6 +1,6 @@
 /***************************************************
 AUTOR: carmen Luyo
-PROYECTO: PORTAFOLIO
+PROYECTO: Andrea Jose
 DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
 ****************************************************/
 @import 'style.scss';
@@ -65,6 +65,7 @@ section.banner-tree {
                 color: #912514;
                 font-weight: 700;
                 opacity: 0.49;
+                font-family: "TitilliumWeb-Light";
             }
         }
     }
@@ -166,5 +167,20 @@ section.contact {
     }
     .banner-about {
         position: relative;
+    }
+    .banner-menu {
+        padding: 80px 0px;
+    }
+    .banner-menu .ctn-menu ul li h5 {
+        font-size: 20px;
+    }
+    section.banner-tree .ctn-info-tree ul {
+        display: block;
+        text-align: center;
+        padding-bottom: 15%;
+
+        li span {
+            font-size: 25px;
+        }
     }
 }
