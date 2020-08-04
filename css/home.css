@@ -208,6 +208,19 @@ img {
   margin-right: 25px;
 }
 
+@media screen and (max-width: 768px) {
+  .item.ctn-gallery {
+    display: block;
+    margin-top: 65px;
+  }
+  .item.ctn-gallery .ctn-info-slide {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .item.ctn-gallery .ctn-info-slide h3 {
+    margin-top: 20px;
+  }
+}
 .menu-toggler {
   position: fixed;
   z-index: 9;
